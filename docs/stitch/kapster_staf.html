@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "on-surface": "#111c2d", "tertiary-fixed": "#80f9c8", "tertiary-container": "#008560", "surface-variant": "#d8e3fb", "primary": "#006860", "surface-container-highest": "#d8e3fb", "on-secondary-container": "#735a00", "surface-bright": "#f9f9ff", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#584400", "on-primary-fixed-variant": "#00504a", "secondary-fixed": "#ffe08e", "surface": "#f9f9ff", "on-secondary-fixed": "#241a00", "surface-container": "#e7eeff", "on-surface-variant": "#3d4947", "surface-dim": "#cfdaf2", "on-background": "#111c2d", "secondary-fixed-dim": "#edc13d", "on-tertiary-fixed": "#002115", "on-secondary": "#ffffff", "inverse-on-surface": "#ecf1ff", "outline-variant": "#bcc9c6", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#62dcad", "on-tertiary-fixed-variant": "#00513a", "background": "#f9f9ff", "inverse-surface": "#263143", "on-tertiary-container": "#f5fff7", "primary-fixed-dim": "#6cd8cc", "on-error-container": "#93000a", "tertiary": "#00694c", "secondary-container": "#ffd24d", "primary-container": "#00837a", "secondary": "#745b00", "surface-container-high": "#dee8ff", "outline": "#6d7a77", "surface-tint": "#006a63", "surface-container-low": "#f0f3ff", "on-primary-container": "#f3fffc", "on-primary-fixed": "#00201d", "on-primary": "#ffffff", "inverse-primary": "#6cd8cc", "error-container": "#ffdad6", "primary-fixed": "#8af5e8" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-md": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "headline-sm": ["17px", {"lineHeight": "24px", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,104,96,0.06)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="BarberPro Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDJu42aLqqXyV48RTOHaUGFmR97Adytn1ZrSEfhYYIonWNuYThab6dpxpf7Gdz8kKelQGW16YsxJoaxSQ3Cn2cnXHlp5BUZToRr4wItkcBULyqifzOqHttQO16aUNUWd89OCPA4irR7SQBAgyK_pMPHXEjgke5GJ8fbg5kR3tVlTwAs-6QAaxHqVVJnq8tLWAFciK_u1FlY7pR9K7ZLh-H3ZbUst1-MQxoNIVYN730"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface truncate">Kapster</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">POS</span></div><span class="font-body-sm text-body-sm text-on-surface-variant truncate">GentStyle Barbershop - Cabang Pusat</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full hover:ring-2 hover:ring-primary/20 transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMGoWDFdkbxZ3ZRZdktfyjP0UhDGPtar5PbratW3uvEtoBaCm4YvYWkzp9I8GW1rhVnZF_bWGly_jpTZbRcMk2q0qYQ09J_-2t7Ov5Sjdd3stYqk6iviGka1daGau_C_ZsdTcn-qn5HSJvykpOyaNBt_ZfdNmZsNNr_R6cBOzIKKwhqJ5HfavKF9nYE1FXzI8-uOUtuK_gMZhWMGFj655YUH14RbCWfs3GK_jSq34"/></button></div></div></header><main class="flex flex-col relative w-full px-margin pt-16 pb-28 bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg">
+<!-- Ringkasan Shift & Aktivitas Tim -->
+<div class="relative overflow-hidden bg-primary text-on-primary rounded-lg p-space-md shadow-md">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary-container/40 pointer-events-none blur-xl"></div>
+<div class="flex items-center justify-between mb-space-sm relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">group</span>
+<span class="font-label-lg text-label-lg text-on-primary">Status Tim Hari Ini</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-container px-space-sm py-0.5 rounded-full text-on-primary-container">
+        Shift Pagi &amp; Sore
+      </span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs relative z-10">
+<div class="bg-surface-container-lowest/10 backdrop-blur-sm rounded-DEFAULT p-space-sm flex flex-col">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Hadir</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-primary font-bold">4</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed">Staf</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/10 backdrop-blur-sm rounded-DEFAULT p-space-sm flex flex-col">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Izin / Cuti</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold">1</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Orang</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/10 backdrop-blur-sm rounded-DEFAULT p-space-sm flex flex-col">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Pengerjaan</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-tertiary-fixed font-bold">32</span>
+<span class="font-label-sm text-label-sm text-on-primary">Kepala</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex items-center gap-space-sm mt-space-md pt-space-sm relative z-10">
+<button class="flex-1 flex items-center justify-center gap-space-xs py-2 px-space-sm bg-secondary-container text-on-secondary-container rounded-full font-label-md text-label-md active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Tambah Kapster / Shift</span>
+</button>
+<button aria-label="Kalender Jadwal" class="w-10 h-10 flex items-center justify-center bg-surface-container-lowest/20 text-on-primary rounded-full active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</button>
+</div>
+</div>
+<!-- Tombol Aksi Cepat & Navigasi Operasional -->
+<div class="grid grid-cols-3 gap-space-sm">
+<button class="flex flex-col items-center justify-center p-space-sm bg-surface-container-lowest rounded-DEFAULT shadow-sm active:scale-95 transition-all text-center" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Atur Shift</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rotasi Kursi</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm bg-surface-container-lowest rounded-DEFAULT shadow-sm active:scale-95 transition-all text-center" type="button">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Rincian Komisi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kalkulasi Otomatis</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm bg-surface-container-lowest rounded-DEFAULT shadow-sm active:scale-95 transition-all text-center" type="button">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary mb-1">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Absensi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Log Kehadiran</span>
+</button>
+</div>
+<!-- Kartu Aturan Pembagian Komisi -->
+<div class="bg-surface-container-low rounded-DEFAULT p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Skema Bagi Hasil Aktif</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Standard Branch</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-sm flex items-center gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">content_cut</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Jasa Potong</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">40%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-sm flex items-center gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Jual Pomade/Produk</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">10%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Daftar Profil Kapster -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Daftar Kapster &amp; Performa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Aktif</span>
+</div>
+<!-- Kapster 1: Budi Fade Master -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Portrait of an experienced male barber in his 30s with neatly trimmed beard, confident smile, stylish slick back hairstyle, wearing a dark canvas apron with leather straps in an upscale barbershop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm9kmzYdMvGUJj6EPMv2G6JEDiEjUJO2KEJ9fCVP2nKA_Yp_bnfoqWHb3Niu7Tf2GxfgIsy195LHeGYGneWDdveYXWfe7rHL2unDpQgOKQQyMv_WEoJKg0vB6zDDQXTqeXyUYzF2NNCr1vxrxGRQKXMR_hFJbLYniQNPnDBYWIqqM4tii07SDOI9HFv-su8XOpOnTtQyw6PiIcDojOSFxTQ9iEbo_42Tj6kaWoGMw"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Mas Budi</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant bg-primary-fixed px-2 py-0.5 rounded-full">Senior Barber</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">"The Fade Master"</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(128 Ulasan)</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+          Kursi #2
+        </span>
+</div>
+<!-- Performance Metrics -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low rounded-DEFAULT p-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kepala Hari Ini</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">9 Pelanggan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Komisi Sementara</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 225.000</span>
+</div>
+</div>
+<!-- Target Progress -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Target Harian (9/10 Kepala)</span>
+<span class="text-primary font-bold">90%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</div>
+<!-- Kapster 2: Rian Scissor Hand -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Portrait of an energetic youthful male hair stylist with fashionable wavy hair, wearing a sleek modern black barber vest, friendly welcoming demeanor against bright warm wood salon studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlyc48P9Gm_VKQ_iPHyW0OSSjBA14jUZ4n_YS3llMx134Amf_rmkI3yiQa77azl685W35wwGSZ7PARiwj9MgBp-j9pgpqeAEtbghqWvRcrzggWv6gOn-SJ0KbO9P0W9v60ZnDqLOwjvavGcUEaRPpxMT3MYx6loBRiWihn_cxTzox6N1_-bwPTLBi7gdUpVrb-cit10W1ejql0du0sdaai0nc0yAiC415-wU5whVQ"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-secondary-fixed-dim ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Rian</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Hair Stylist</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">"Scissor Hand"</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(94 Ulasan)</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Siap Kursi #1
+        </span>
+</div>
+<!-- Performance Metrics -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low rounded-DEFAULT p-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kepala Hari Ini</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">7 Pelanggan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Komisi Sementara</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 175.000</span>
+</div>
+</div>
+<!-- Target Progress -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Target Harian (7/10 Kepala)</span>
+<span class="text-primary font-bold">70%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</div>
+<!-- Kapster 3: Kevin Pratama -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Close up portrait of a young Indonesian male junior barber smiling gently, wearing clean denim barber uniform, clean modern barbershop ambient background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwsdWb72mTci2eUdG0hT5Yyr-KyrQT0LeQO1P0TmuZRzz6YdhFmLsKdWV_4t_zkEcNiqzBWBohD-J_smqmsFBQqgDC-N0w-aO7cZbzctKRgN5qcf9ooYMnLTDpSDudofi2B5kS_j5pD-8xuGV4G8ErEb4oUep7TRYV1Lw1eoeu0EEp-iVYOt8WVRcScdRLFOdWk-V3BrEChgl0NuQCbt0pctrwxk0u3Wg_6h07C2k"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-outline-variant ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Kevin Pratama</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Junior Barber</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">All-round Grooming</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(45 Ulasan)</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          Istirahat (12:00)
+        </span>
+</div>
+<!-- Performance Metrics -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low rounded-DEFAULT p-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kepala Hari Ini</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">5 Pelanggan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Komisi Sementara</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 100.000</span>
+</div>
+</div>
+<!-- Target Progress -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Target Harian (5/8 Kepala)</span>
+<span class="text-primary font-bold">62%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 62.5%"></div>
+</div>
+</div>
+</div>
+<!-- Kapster 4: Doni Arisandi -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Portrait of an edgy creative hair coloring stylist male with dyed silver hair accents, wearing modern streetwear apron, warm indoor salon studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA02FFA341TIt03y9boLQdo1pOr4N10sH1MWgcYYi0azjfhNSlfCwoD1dwTc80-p0T0Rrh2W_nYIxlToRgKKdNsyqGCNAjVKIKyXp-Zm9H1IcpxnU0k-x5HoRlZy2ncv6zjs4HqyZxyagf0w2kiW76PtWEzdevsnHDvhvUUrw9RiB1GTiS9GtR87BGpyrJEuqMnD-88TZuWn61NCP8UhAtoZEjIJ-qqQJwFIpUBEqU"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-primary-fixed-dim ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Doni Arisandi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Coloring</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Bleach &amp; Hair Treatment</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(78 Ulasan)</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">bedtime</span>
+          Shift Sore (15:00)
+        </span>
+</div>
+<!-- Performance Metrics -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low rounded-DEFAULT p-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kepala Hari Ini</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">0 Pelanggan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Komisi Sementara</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-bold">Rp 0</span>
+</div>
+</div>
+<!-- Target Progress -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Target Shift Sore (0/6 Kepala)</span>
+<span class="text-on-surface-variant">Menunggu Mulai</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary/20 h-full rounded-full" style="width: 4%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Petunjuk Edukatif Footer -->
+<div class="flex items-start gap-space-sm p-space-md rounded-DEFAULT bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0 mt-0.5">tips_and_updates</span>
+<p class="font-body-sm text-body-sm">
+      Komisi harian akan terkunci otomatis saat penutupan kasir malam (22:30 WIB) dan langsung diakumulasikan ke rekening dompet masing-masing staf.
+    </p>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,104,96,0.08)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="kasir" href="#"><span class="material-symbols-outlined text-[22px]">point_of_sale</span><span class="font-label-sm text-label-sm mt-0.5">Kasir</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="transaksi" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Transaksi</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="layanan-produk" href="#"><span class="material-symbols-outlined text-[22px]">content_cut</span><span class="font-label-sm text-label-sm mt-0.5">Katalog</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full transition-colors text-primary font-bold" data-path="kapster" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Kapster</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="keuangan" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-sm text-label-sm mt-0.5">Kas</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="laporan" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-sm text-label-sm mt-0.5">Laporan</span></a></div></nav></body></html>

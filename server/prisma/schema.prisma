@@ -1,0 +1,137 @@
+// Prisma Schema for Barbershop Management System (SI Barber Coolmant)
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  OWNER
+  CASHIER
+  BARBER
+}
+
+enum PaymentMethod {
+  CASH
+  QRIS
+  DEBIT
+  TRANSFER
+}
+
+enum TransactionStatus {
+  COMPLETED
+  PENDING
+  CANCELLED
+}
+
+enum CashFlowType {
+  INCOME
+  EXPENSE
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  username  String   @unique
+  password  String
+  role      Role     @default(CASHIER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Barber {
+  id           Int           @id @default(autoincrement())
+  name         String
+  phone        String?
+  avatar       String?
+  isActive     Boolean       @default(true)
+  commissionRate Float       @default(40.0) // persen bagi hasil (misal 40%)
+  transactions Transaction[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  services  Service[]
+  products  Product[]
+}
+
+model Service {
+  id               Int               @id @default(autoincrement())
+  name             String
+  description      String?
+  price            Decimal           @db.Decimal(10, 2)
+  durationMinutes  Int               @default(30)
+  categoryId       Int?
+  category         Category?         @relation(fields: [categoryId], references: [id])
+  transactionItems TransactionItem[]
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+}
+
+model Product {
+  id               Int               @id @default(autoincrement())
+  name             String
+  sku              String?           @unique
+  description      String?
+  price            Decimal           @db.Decimal(10, 2)
+  costPrice        Decimal           @db.Decimal(10, 2) // harga modal
+  stock            Int               @default(0)
+  imageUrl         String?
+  categoryId       Int?
+  category         Category?         @relation(fields: [categoryId], references: [id])
+  transactionItems TransactionItem[]
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+}
+
+model Transaction {
+  id             Int               @id @default(autoincrement())
+  invoiceCode    String            @unique // contoh: TRX-8821
+  customerName   String            @default("Umum")
+  customerPhone  String?
+  subtotal       Decimal           @db.Decimal(10, 2)
+  discount       Decimal           @default(0) @db.Decimal(10, 2)
+  totalAmount    Decimal           @db.Decimal(10, 2)
+  cashPaid       Decimal?          @db.Decimal(10, 2)
+  cashChange     Decimal?          @db.Decimal(10, 2)
+  paymentMethod  PaymentMethod     @default(CASH)
+  status         TransactionStatus @default(COMPLETED)
+  barberId       Int?
+  barber         Barber?           @relation(fields: [barberId], references: [id])
+  barberCommission Decimal         @default(0) @db.Decimal(10, 2)
+  notes          String?
+  items          TransactionItem[]
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+}
+
+model TransactionItem {
+  id            Int          @id @default(autoincrement())
+  transactionId Int
+  transaction   Transaction  @relation(fields: [transactionId], references: [id], onDelete: Cascade)
+  serviceId     Int?
+  service       Service?     @relation(fields: [serviceId], references: [id])
+  productId     Int?
+  product       Product?     @relation(fields: [productId], references: [id])
+  name          String       // snapshot nama item saat transaksi
+  price         Decimal      @db.Decimal(10, 2)
+  quantity      Int          @default(1)
+  subtotal      Decimal      @db.Decimal(10, 2)
+}
+
+model CashFlow {
+  id          Int          @id @default(autoincrement())
+  type        CashFlowType
+  category    String       // contoh: "Modal Awal", "Beli Silet/Handuk", "Listrik", "Pengambilan Kasir"
+  amount      Decimal      @db.Decimal(10, 2)
+  description String?
+  date        DateTime     @default(now())
+  createdAt   DateTime     @default(now())
+}
+

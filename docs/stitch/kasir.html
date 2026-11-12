@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "on-surface": "#111c2d", "tertiary-fixed": "#80f9c8", "tertiary-container": "#008560", "surface-variant": "#d8e3fb", "primary": "#006860", "surface-container-highest": "#d8e3fb", "on-secondary-container": "#735a00", "surface-bright": "#f9f9ff", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#584400", "on-primary-fixed-variant": "#00504a", "secondary-fixed": "#ffe08e", "surface": "#f9f9ff", "on-secondary-fixed": "#241a00", "surface-container": "#e7eeff", "on-surface-variant": "#3d4947", "surface-dim": "#cfdaf2", "on-background": "#111c2d", "secondary-fixed-dim": "#edc13d", "on-tertiary-fixed": "#002115", "on-secondary": "#ffffff", "inverse-on-surface": "#ecf1ff", "outline-variant": "#bcc9c6", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#62dcad", "on-tertiary-fixed-variant": "#00513a", "background": "#f9f9ff", "inverse-surface": "#263143", "on-tertiary-container": "#f5fff7", "primary-fixed-dim": "#6cd8cc", "on-error-container": "#93000a", "tertiary": "#00694c", "secondary-container": "#ffd24d", "primary-container": "#00837a", "secondary": "#745b00", "surface-container-high": "#dee8ff", "outline": "#6d7a77", "surface-tint": "#006a63", "surface-container-low": "#f0f3ff", "on-primary-container": "#f3fffc", "on-primary-fixed": "#00201d", "on-primary": "#ffffff", "inverse-primary": "#6cd8cc", "error-container": "#ffdad6", "primary-fixed": "#8af5e8" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-md": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "headline-sm": ["17px", {"lineHeight": "24px", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,104,96,0.06)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="BarberPro Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDJu42aLqqXyV48RTOHaUGFmR97Adytn1ZrSEfhYYIonWNuYThab6dpxpf7Gdz8kKelQGW16YsxJoaxSQ3Cn2cnXHlp5BUZToRr4wItkcBULyqifzOqHttQO16aUNUWd89OCPA4irR7SQBAgyK_pMPHXEjgke5GJ8fbg5kR3tVlTwAs-6QAaxHqVVJnq8tLWAFciK_u1FlY7pR9K7ZLh-H3ZbUst1-MQxoNIVYN730"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface truncate">Kasir</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">POS</span></div><span class="font-body-sm text-body-sm text-on-surface-variant truncate">GentStyle Barbershop - Cabang Pusat</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full hover:ring-2 hover:ring-primary/20 transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMGoWDFdkbxZ3ZRZdktfyjP0UhDGPtar5PbratW3uvEtoBaCm4YvYWkzp9I8GW1rhVnZF_bWGly_jpTZbRcMk2q0qYQ09J_-2t7Ov5Sjdd3stYqk6iviGka1daGau_C_ZsdTcn-qn5HSJvykpOyaNBt_ZfdNmZsNNr_R6cBOzIKKwhqJ5HfavKF9nYE1FXzI8-uOUtuK_gMZhWMGFj655YUH14RbCWfs3GK_jSq34"/></button></div></div></header><main class="flex flex-col relative w-full px-margin pt-16 pb-28 bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg">
+<!-- Active Cashier & Queue Status Strip -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_8px_24px_-4px_rgba(0,104,96,0.08)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase">Shift Aktif</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="current-date-label">Kamis, 24 Okt 2024</span>
+</div>
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+        Shift Pagi
+      </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold font-headline-sm text-headline-sm">
+          A
+        </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Alex Sander</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kasir Station 01</span>
+</div>
+</div>
+<div class="bg-secondary-container/30 px-space-md py-1.5 rounded-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">chair</span>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase leading-none">Antrean Aktif</span>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold leading-tight">#08</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Queue & Chair Filter Chips -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Status Kursi &amp; Antrean</h2>
+<button class="text-primary font-label-md text-label-md flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+        Tambah Walk-in
+      </button>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="flex-shrink-0 px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm flex items-center gap-1.5 transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">content_cut</span>
+        Sedang Dipotong (3)
+      </button>
+<button class="flex-shrink-0 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-[0_4px_12px_rgba(0,104,96,0.04)] flex items-center gap-1.5 hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_top</span>
+        Menunggu (2)
+      </button>
+<button class="flex-shrink-0 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-[0_4px_12px_rgba(0,104,96,0.04)] flex items-center gap-1.5 hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+        Selesai
+      </button>
+</div>
+</div>
+<!-- Kapster Assigner -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_8px_24px_-4px_rgba(0,104,96,0.08)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+        Pilih Kapster Bertugas
+      </label>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-surface-container-low px-2 py-0.5 rounded-full">Komisi Otomatis</span>
+</div>
+<!-- Kapster selectable cards -->
+<div class="grid grid-cols-3 gap-space-xs" id="kapster-selector">
+<div class="kapster-card cursor-pointer rounded-DEFAULT p-space-sm bg-primary-fixed/30 flex flex-col items-center gap-1 transition-all text-center" onclick="selectKapster(this)">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait photo of a young modern Indonesian male barber smiling warmly, wearing a black canvas apron and stylish pompadour haircut in an emerald teal aesthetic barbershop background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZLU0_OVJS-0THp1xvmy4QQpu4ewOlNxJ3NE3QkbZFE_-tmM7KO1nRxNoMN0o-E43HcGlKpm3lQniXJhdaV1mYTn9F1_whQLYu6_nhgY-aSrSR1utO9sL58u6P9nGp8wzbR-MZb9g_1fASwlbBmYGCGd0vH2qySHKgcWnYzfdk9W07wJisrFOZsIBffPYFm9lCHNZ0sixwBUVgTOXRhPfjkk4WUSwWKEwQd2Y2fdQ"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-tertiary-container shadow"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full mt-0.5">Mas Budi</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Chair 01</span>
+</div>
+<div class="kapster-card cursor-pointer rounded-DEFAULT p-space-sm bg-surface-container-low flex flex-col items-center gap-1 transition-all text-center opacity-75" onclick="selectKapster(this)">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Close up portrait of a skilled Indonesian barber with taper fade haircut and neat stubble wearing dark professional uniform inside a warm illuminated salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0x8r-SKzCifdPzFXt9kjR0UbU8PE_5r4GIYXJlhZga4G6HKQLtc3FksgMg54KVXs634i49lnWoW1MjizaUgKPBGVqMLSFi8twy18XgM3n-XQ8_82076TSjGdXdUCFV-LKm8vfJssSNIVUtRGScrlEBFLJiTq5PaPFcOlzWNMGMfU68ITqSNbZprNjgVfljTYoehbUmUsfQd67FAzwgxGCRHXD76XTPcFxTXNNxFM"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary-container shadow"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full mt-0.5">Rian Fade</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chair 02</span>
+</div>
+<div class="kapster-card cursor-pointer rounded-DEFAULT p-space-sm bg-surface-container-low flex flex-col items-center gap-1 transition-all text-center opacity-75" onclick="selectKapster(this)">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Friendly creative male hairstylist with sharp line haircut and clean style posing confidently in modern salon atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFrGQy8OGOf676QA7j5XQtJ3eXldguYMt-Ktzk0hi4JycSW6GvOrw_H-55sBROO3KMNUup0qtD1p7EW2DLEQxNQVfpTSf_8Cx_fhQ6Bw7twm7Zqqc4e1C60YUSJTu15mA9pKXesOUI7f_B1Yx7NX9AcUOs9PTFvTxEBt5b3aYDQ05hgtkjDUQEatVhhb9qwQ6VXJt3UEUznaeMWo0Ni-J68HCjwc898yJbaHMYvgA"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-tertiary-container shadow"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full mt-0.5">Kevin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chair 03</span>
+</div>
+</div>
+</div>
+<!-- Quick Catalog & Service Selection -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Layanan &amp; Produk Cepat</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">POS Cepat</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+</div>
+<!-- Catalog Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Item 1: Paket Haircut (Active/Selected item in current cart) -->
+<div class="catalog-item cursor-pointer bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-[0_8px_20px_-4px_rgba(0,104,96,0.12)] transition-all hover:translate-y-[-2px] relative overflow-hidden group" onclick="toggleItem(this, 'Paket Haircut + Cuci + Pijat', 75000)">
+<div class="absolute top-2 right-2 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[14px] font-bold shadow">
+          1
+        </div>
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Gentleman enjoying relaxing luxury haircut session with hair wash shampoo service and hot towel treatment at upscale barbershop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eSJdGK3WHNLPlDFR1ochp4HZI6fYexFmqSADg5c_b68M1KDhezMudNDDIrWonQY1I8D7ZZYTOAmrEHa5AQSOVVDbUyKMTW-c1eiOe5Jpv0-xu7lN-wvqvrfHv6pMbULc7PY4Ju27pwZESYHhygg2y0YHQmXeUFKWB0_xZ8d4I5V3WAahL9N_QO1aPIutp7XWFI1lAnzD0dCWuUxJ2Vi4LZAw3Em05jtTWCcoW_A"/>
+<span class="absolute bottom-1.5 left-1.5 bg-on-surface/70 backdrop-blur-md text-surface-bright font-label-sm text-label-sm px-1.5 py-0.5 rounded">45 Menit</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-2">Paket Haircut + Cuci + Pijat</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 75.000</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Item 2: Gentleman Haircut Reguler -->
+<div class="catalog-item cursor-pointer bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-[0_4px_16px_rgba(0,104,96,0.05)] transition-all hover:translate-y-[-2px] relative overflow-hidden group" onclick="toggleItem(this, 'Gentleman Haircut Reguler', 50000)">
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Classic gentleman skin fade haircut with precision scissor cut styling in bright modern barbershop environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDznF_NDHq37ZZafTMOf21OZqaH1WByxs-56YByrEAA1LLKuSppXMY8cw85I9XWNLpD1f6g48SN1opu34PxP8gAms9ekZ86DwLO4oYcCV5nv888XEXnx2U8nliy8iSeOxl8csVfDJvVgAFMgS_TUaqU9qDLKPIgFXE70inanTu3wVZ2Udtwxy3us9-bRv3PSd-06Y2uZndrtJPGGtq_hQaIOYjWp6JumZ5vYrkFx74"/>
+<span class="absolute bottom-1.5 left-1.5 bg-on-surface/70 backdrop-blur-md text-surface-bright font-label-sm text-label-sm px-1.5 py-0.5 rounded">30 Menit</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-2">Gentleman Haircut Reguler</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rp 50.000</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Shaving & Hot Towel -->
+<div class="catalog-item cursor-pointer bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-[0_4px_16px_rgba(0,104,96,0.05)] transition-all hover:translate-y-[-2px] relative overflow-hidden group" onclick="toggleItem(this, 'Shaving &amp; Hot Towel', 35000)">
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Traditional straight razor beard shaving session with warm lather and steamy hot white towel therapy for men grooming." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcVZ9Z5nLylz0Mj6kefcXP7mK97auBcWFbhZ2KgCwCrSD51dcw5epZvSw1vyWriUb1wpfiS4qvCbjESz7W5Y32Eu-Jxf2ppL4VhHpTGbcAO2MTBz4hd12mNwNmsBmz7-G0GRABw4Sm4E-nQCJKNFaB2kkg5k1gGUCVKkHI3Ie6y0f39rTOvc1luMs3CkTGCCUiBhQDDCVJPTilVrJyZSJg1c9x6rgRwjjVCf3-yHE"/>
+<span class="absolute bottom-1.5 left-1.5 bg-on-surface/70 backdrop-blur-md text-surface-bright font-label-sm text-label-sm px-1.5 py-0.5 rounded">20 Menit</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-2">Shaving &amp; Hot Towel</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rp 35.000</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Hair Coloring / Bleaching -->
+<div class="catalog-item cursor-pointer bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-[0_4px_16px_rgba(0,104,96,0.05)] transition-all hover:translate-y-[-2px] relative overflow-hidden group" onclick="toggleItem(this, 'Hair Coloring / Bleaching', 120000)">
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Professional hair coloring and ash grey bleach styling service being applied to a male client in trendy salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16BkCKGzxItvp_Bawj8ihT-XutRw0i7x7JbkIpSScnREh62U0Y4g_yeOtQ4t5BKUCf9l-bXsP9VESdbKgjK8EjuTKaPqUb1P_H2tLW_8TcDO1r2PvpzHxGkbH7sDh6ZMnVH00PAh69QdONoBqUCqAi3WlNnzwyl8K_H4FEHOt3YN8EDO3zmWsmzeVnsKK28HHz_iRwrF3jkW4ZkyK4UUjLbuSgtwrhG-xe76JRCI"/>
+<span class="absolute bottom-1.5 left-1.5 bg-on-surface/70 backdrop-blur-md text-surface-bright font-label-sm text-label-sm px-1.5 py-0.5 rounded">60 Menit</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-2">Hair Coloring / Bleaching</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rp 120.000</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</div>
+</div>
+<!-- Item 5: Pomade Matte Clay (In Cart) -->
+<div class="catalog-item cursor-pointer bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-[0_8px_20px_-4px_rgba(0,104,96,0.12)] transition-all hover:translate-y-[-2px] relative overflow-hidden group" onclick="toggleItem(this, 'Pomade Matte Clay 100g', 85000)">
+<div class="absolute top-2 right-2 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[14px] font-bold shadow">
+          1
+        </div>
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Matte black premium grooming pomade tin jar product shot on clean textured mint backdrop with natural water droplets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBE3fw7SVFkmyTGYW_ru9s95jTO9ME4_QEtWfIlASLPLwGlqy9DLYT9U5hhUE8up3wcPUQsIlc0PUt59k0UF1oXR6NnYrpspWX41L33RWf01fErSNyT-ELGxTPXLc1alrobhn0igPkzZvbKdtmPOFBDZo39bL8jNcg-edTJ1LsTvtMg-Lxg53averY2iaRyBZoT_ghG3pqmE1gtW0WaDAInL4zNXqkkmSc6LMewM"/>
+<span class="absolute bottom-1.5 left-1.5 bg-secondary text-surface-bright font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold">Produk</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-2">Pomade Matte Clay 100g</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 85.000</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Item 6: Beard Oil Grooming -->
+<div class="catalog-item cursor-pointer bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-[0_4px_16px_rgba(0,104,96,0.05)] transition-all hover:translate-y-[-2px] relative overflow-hidden group" onclick="toggleItem(this, 'Beard Oil Grooming', 65000)">
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Amber glass dropper bottle of luxury organic beard oil for men standing upright against minimalist salon counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk339m1VVUrUlI_3Qpx1xuwXTMU5O3suNYceWbQH9EKJ9D5iCgNBK2E_B_DIjyzIydDeC68pNp39mXwXZiCXGeMU1i-0RyPLGvVz-eVXYc8MclGiHQEDXaHRU_DyvYgVsbYIr56c7_26lile7MjZVfL33zArwtZr1qajN6ZwnSeZIOqXR_QLc8vUPTpq202Z90Zlfi-ZPDHYG29EcY5ikiNLxNinhbbcrDdbAe8_I"/>
+<span class="absolute bottom-1.5 left-1.5 bg-secondary text-surface-bright font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold">Produk</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-2">Beard Oil Grooming</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rp 65.000</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Walk-in Profile Pill Banner -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Pelanggan: Dimas Arya</span>
+<span class="px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">VIP Member</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+62 812-4456-9901 • 140 Poin</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</button>
+</div>
+<!-- FLOATING ORDER SUMMARY CARD (Sticky inside screen flow) -->
+<div class="relative w-full rounded-lg bg-surface-container-lowest p-space-md shadow-[0_16px_36px_-6px_rgba(0,104,96,0.18),0_4px_12px_-2px_rgba(0,104,96,0.08)] flex flex-col gap-space-md">
+<!-- Top Row: Items Quick Preview & Price Breakdown -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Pesanan #08</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">
+            2 Layanan/Item
+          </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[200px]">
+          Haircut + Cuci, Pomade Matte
+        </span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Tagihan</span>
+<span class="font-headline-lg text-headline-lg text-primary font-extrabold">Rp 160.000</span>
+</div>
+</div>
+<!-- Quick Micro Actions: Member Discount & Save Queue -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-11 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+        Diskon / Member
+      </button>
+<button class="h-11 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+        Simpan Antrean
+      </button>
+</div>
+<!-- Main Payment CTA Button: Accent Sunburst Yellow with High Contrast -->
+<button class="w-full h-13 py-3.5 px-space-md rounded-full bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-fixed font-headline-sm text-headline-sm font-bold flex items-center justify-between shadow-[0_8px_20px_rgba(255,210,77,0.35)] transition-all active:scale-[0.98]" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+<span>Proses Pembayaran</span>
+</div>
+<div class="flex items-center gap-1 bg-on-secondary-fixed/10 px-2.5 py-1 rounded-full">
+<span class="font-label-lg text-label-lg font-extrabold">Rp 160.000</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</button>
+</div>
+</div>
+<script>
+  function selectKapster(element) {
+    const cards = document.querySelectorAll('.kapster-card');
+    cards.forEach(card => {
+      card.classList.remove('bg-primary-fixed/30');
+      card.classList.add('bg-surface-container-low', 'opacity-75');
+    });
+    element.classList.remove('bg-surface-container-low', 'opacity-75');
+    element.classList.add('bg-primary-fixed/30');
+  }
+
+  function toggleItem(element, name, price) {
+    element.classList.toggle('ring-2');
+    element.classList.toggle('ring-primary');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,104,96,0.08)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full transition-colors text-primary font-bold" data-path="kasir" href="#"><span class="material-symbols-outlined text-[22px]">point_of_sale</span><span class="font-label-sm text-label-sm mt-0.5">Kasir</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="transaksi" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Transaksi</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="layanan-produk" href="#"><span class="material-symbols-outlined text-[22px]">content_cut</span><span class="font-label-sm text-label-sm mt-0.5">Katalog</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="kapster" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Kapster</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="keuangan" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-sm text-label-sm mt-0.5">Kas</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="laporan" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-sm text-label-sm mt-0.5">Laporan</span></a></div></nav></body></html>
